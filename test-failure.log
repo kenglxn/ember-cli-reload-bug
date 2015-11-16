@@ -1,0 +1,4 @@
+Failed to find a valid digest in the 'integrity' attribute for resource 'http://localhost:7357/assets/tests.js' with computed SHA-256 integrity 'ClS0UGqQa6VQsVAOScqwF2YipvbgLPopLBH9hVD/9YU='. The resource has been blocked.
+Uncaught Error: Assertion Failed: The tests file was not loaded. Make sure your tests index.html includes "assets/tests.js".
+DEBUG: For more advanced debugging, install the Ember Inspector from https://chrome.google.com/webstore/detail/ember-inspector/bmdblncegkenkacieihfhpjfppoconhi
+unable to require.unsee, please upgrade loader.js to >= v3.3.0
