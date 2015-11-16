@@ -40,5 +40,7 @@ git checkout a8af8138095dee42367157154772ee7771543d60
 #         expected true
 ```
 
+Error output in chrome:
+[test-failure.log]
 
-Relevant screenshots:
+Relevant Screenshots:
