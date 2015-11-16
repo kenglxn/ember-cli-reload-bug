@@ -33,4 +33,12 @@ ember test --server
 5: Load up the failing test again
 ```bash
 git checkout a8af8138095dee42367157154772ee7771543d60
+# 
+# Et voila, the actual test failure:
+#
+# 1 error
+#         expected true
 ```
+
+
+Relevant screenshots:
