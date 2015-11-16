@@ -15,6 +15,8 @@ ember test --server
 ```bash
 git checkout a8af8138095dee42367157154772ee7771543d60
 # At this point the tests should be failing due to integrity check.
+#
+# Uncaught Error: Assertion Failed: The tests file was not loaded. Make sure your tests index.html includes "assets/tests.js"
 ```
 3. Load up the passing test with integrity workaround in place
 ```bash
