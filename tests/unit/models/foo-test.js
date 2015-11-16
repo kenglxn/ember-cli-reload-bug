@@ -8,5 +8,5 @@ moduleForModel('foo', 'Unit | Model | foo', {
 test('it exists', function(assert) {
   let model = this.subject();
   // let store = this.store();
-  assert.ok(false);
+  assert.ok(!!model);
 });
