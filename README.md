@@ -33,7 +33,7 @@ ember test --server
 5: Load up the failing test again
 ```bash
 git checkout a8af8138095dee42367157154772ee7771543d60
-# 
+#
 # Et voila, the actual test failure:
 #
 # 1 error
@@ -45,3 +45,7 @@ git checkout a8af8138095dee42367157154772ee7771543d60
 [test-failure.log](test-failure.log)
 
 ### Relevant Screenshots:
+
+![browser](https://raw.githubusercontent.com/kenglxn/ember-cli-reload-bug/master/browser.png "Browser screenshot")
+
+![console](https://raw.githubusercontent.com/kenglxn/ember-cli-reload-bug/master/console.png "Console screenshot")
