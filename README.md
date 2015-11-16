@@ -1,53 +1,29 @@
 # Ember-cli-reload-bug
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+This repo demonstrates how test reloading is failing using chrome with `ember test --server`.
 
-## Prerequisites
 
-You will need the following things properly installed on your computer.
+## To reproduce bug do following:
 
-* [Git](http://git-scm.com/)
-* [Node.js](http://nodejs.org/) (with NPM)
-* [Bower](http://bower.io/)
-* [Ember CLI](http://www.ember-cli.com/)
-* [PhantomJS](http://phantomjs.org/)
+1. Start ember test in server mode
 
-## Installation
+    npm install
+    bower install
+    ember test --server
 
-* `git clone <repository-url>` this repository
-* change into the new directory
-* `npm install`
-* `bower install`
+2. while tests are running, load the faling test:
 
-## Running / Development
+    git checkout a8af8138095dee42367157154772ee7771543d60
+    # At this point the tests should be failing due to integrity check.
 
-* `ember server`
-* Visit your app at [http://localhost:4200](http://localhost:4200).
+3. Load up the passing test with integrity workaround in place
 
-### Code Generators
+    git checkout 1cb5c2ff0dd6625efa95f355608987acfa3391c8
 
-Make use of the many generators for code, try `ember help generate` for more details
+4. Restart the ember test suite in server mode
 
-### Running Tests
+    ember test --server
 
-* `ember test`
-* `ember test --server`
+5. Load up the failing test again
 
-### Building
-
-* `ember build` (development)
-* `ember build --environment production` (production)
-
-### Deploying
-
-Specify what it takes to deploy your app.
-
-## Further Reading / Useful Links
-
-* [ember.js](http://emberjs.com/)
-* [ember-cli](http://www.ember-cli.com/)
-* Development Browser Extensions
-  * [ember inspector for chrome](https://chrome.google.com/webstore/detail/ember-inspector/bmdblncegkenkacieihfhpjfppoconhi)
-  * [ember inspector for firefox](https://addons.mozilla.org/en-US/firefox/addon/ember-inspector/)
-
+    git checkout a8af8138095dee42367157154772ee7771543d60
